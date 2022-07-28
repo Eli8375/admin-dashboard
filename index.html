@@ -26,21 +26,22 @@
             </ul>
         </div>
         <header>
-            <div class="top-header">
-                <div class="search-bar">
-                    <form action="#" id="my-form">
-                        <img src="#" alt="magnifying-glass">
-                        <label for="search-bar"></label>
-                        <input type="search" name="search-bar" id="search-bar">
-                    </form>
-                </div>
-                <img src="#" class="alert-button" alt="notifications">
-                <img src="#" class="profile" alt="profile-pic">
+            <div class="search">
+                <form action="#" id="my-form">
+                    <img src="/img/search-icon.svg" alt="magnifying-glass" id="magnifying-glass">
+                    <label for="search-bar"></label>
+                    <input type="search" name="search-bar" id="search-bar" placeholder="Search">
+                </form>
+            </div>
+            <div class="profile-access">
+                <img src="/img/notifications.svg" class="notifications-button" alt="notifications">
+                <img src="/img/account.svg" class="profile-picture" id="profile-picture-right" alt="profile-pic">
+                <div class="username" id="right-username">Username</div>
             </div>
             <div class="welcome-area">
-                <img src="#" class="profile-picture" alt="profile-pic">
-                <div class="hello">Hi there,</div>
-                <div class="user-name">Username (@username)</div>
+                <img src="/img/account.svg" class="profile-picture" id="profile-picture-left" alt="profile-pic">
+                <p class="hello">Hi there,</p>
+                <p class="username" id="left-username">Username (@username)</p>
             </div>
             <div class="action-buttons">
                 <button class="header-button">New</button>
@@ -49,8 +50,8 @@
             </div>
         </header>
         <main>
-            <h2>Your Projects</h2>
             <div class="project-area">
+                <h2>Your Projects</h2>
                 <ul>
                     <li id="project-1">Project 1 Here</li>
                     <li id="project-2">Project 2 Here</li>
