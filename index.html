@@ -5,31 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <title>Admin Dashboard</title>
 </head>
 <body>
     <div class="website-page">
         <div class="side-bar">
-            <h1 id="dashboard">Dashboard</h1>
-            <ul class="nav-bar-1">
-                <li id="home">Home</li>
-                <li id="profile">Profile</li>
-                <li id="messages">Messages</li>
-                <li id="history">History</li>
-                <li id="tasks">Tasks</li>
-                <li id="communities">Communities</li>
-            </ul>
-            <ul class="nav-bar-2">
-                <li id="settings">Settings</li>
-                <li id="support">Support</li>
-                <li id="privacy">Privacy</li>
-            </ul>
+            <a href="#" id="dashboard"><img src="/img/dashboard.svg" alt="dashboard">Dashboard</a>
+            <div class="nav-bar-1">
+                <a href="#" id="home"><img class="side-bar-item" src="/img/home.svg" alt="home">Home</a>
+                <a href="#" id="profile"><img class="side-bar-item" src="/img/badge.svg" alt="profile">Profile</a>
+                <a href="#" id="messages"><img class="side-bar-item" src="/img/chat.svg" alt="messages">Messages</a>
+                <a href="#" id="history"><img class="side-bar-item" src="/img/history.svg" alt="history">History</a>
+                <a href="#" id="tasks"><img class="side-bar-item" src="/img/task.svg" alt="tasks">Tasks</a>
+                <a href="#" id="communities"><img class="side-bar-item" src="/img/groups.svg" alt="communities">Communities</a>
+            </div>
+            <div class="nav-bar-2">
+                <a href="#" id="settings"><img class="side-bar-item" src="/img/settings.svg" alt="settings">Settings</a>
+                <a href="#" id="support"><img class="side-bar-item" src="/img/support.svg" alt="support">Support</a>
+                <a href="#" id="privacy"><img class="side-bar-item" src="/img/privacy.svg" alt="privacy">Privacy</a>
+            </div>
         </div>
         <header>
             <div class="search">
                 <form action="#" id="my-form">
-                    <img src="/img/search-icon.svg" alt="magnifying-glass" id="magnifying-glass">
-                    <label for="search-bar"></label>
+                    <label for="search-bar"><img src="/img/search-icon.svg" alt="magnifying-glass" id="magnifying-glass"></label>
                     <input type="search" name="search-bar" id="search-bar" placeholder="Search">
                 </form>
             </div>
@@ -51,30 +53,67 @@
         </header>
         <main>
             <div class="project-area">
-                <h2>Your Projects</h2>
-                <ul>
-                    <li id="project-1">Project 1 Here</li>
-                    <li id="project-2">Project 2 Here</li>
-                    <li id="project-3">Project 3 Here</li>
-                    <li id="project-4">Project 4 Here</li>
-                    <li id="project5">Project 5 Here</li>
-                    <li id="projet6">Project 6 Here</li>
-                </ul>
+                <h2 class="header" id="header">Your Projects</h2>
+                <div class="card-area">
+                    <div class="project-cards" id="project-1">
+                        <h3>Project 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quam vel numquam in quasi ducimus?</p>
+                    </div>
+                    <div class="project-cards" id="project-2">
+                        <h3>Project 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quam vel numquam in quasi ducimus?</p>
+                    </div>
+                    <div class="project-cards" id="project-3">
+                        <h3>Project 3</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quam vel numquam in quasi ducimus?</p>
+                    </div>
+                    <div class="project-cards" id="project-4">
+                        <h3>Project 4</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quam vel numquam in quasi ducimus?</p>
+                    </div>
+                    <div class="project-cards" id="project-5">
+                        <h3>Project 5</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quam vel numquam in quasi ducimus?</p>
+                    </div>
+                    <div class="project-cards" id="project-6">
+                        <h3>Project 6</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quam vel numquam in quasi ducimus?</p>
+                    </div>
+                </div>
             </div>
-            <div class="announcements">
-                <ul>
-                    <li id="announcement-1">Announcement 1 Here</li>
-                    <li id="announcement-2">Announcement 2 Here</li>
-                    <li id="announcement-3">Announcement 3 Here</li>
-                </ul>
+            <div class="announcements-area">
+                <h2 class="header" id="announcements-header">Announcements</h2>
+                <div class="announcement-cards" id="announcement-1">
+                    <h3>Site Maintenance</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quam vel numquam in quasi ducimus?</p>
+                </div>
+                <div class="announcement-cards" id="announcement-2">
+                    <h3>Community Share Day</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quam vel numquam in quasi ducimus?</p>
+                </div>
+                <div class="announcement-cards" id="announcement-3">
+                    <h3>Updated Privacy Policy</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, quam vel numquam in quasi ducimus?</p>
+                </div>
             </div>
-            <div class="trending">
-                <ul>
-                    <li id="trending-1">Trending 1 Here</li>
-                    <li id="trending-2">Trending 2 Here</li>
-                    <li id="trending-3">Trending 3 Here</li>
-                    <li id="trending-4">Trending 4 Here</li>
-                </ul>
+            <div class="trending-area">
+                <h2 class="header" id="trending-header">Trending</h2>
+                <div class="trending-cards" id="trending-1">
+                    <h3>@username1</h3>
+                    <p>Lorem ipsum</p>
+                </div>
+                <div class="trending-cards" id="trending-2">
+                    <h3>@username2</h3>
+                    <p>dolor sit</p>
+                </div>
+                <div class="trending-cards" id="trending-3">
+                    <h3>@username3</h3>
+                    <p>amet consectetur</p>
+                </div>
+                <div class="trending-cards" id="trending-4">
+                    <h3>@username4</h3>
+                    <p>adipisicing elit</p>
+                </div>
             </div>
         </main>
     </div>

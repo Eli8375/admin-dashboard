@@ -49,7 +49,9 @@ table {
 
 
 
-
+:root {
+    font-family: 'Ubuntu', sans-serif;
+}
 .website-page {
     background-color: white;
     height: 100vh;
@@ -69,15 +71,28 @@ button {
     padding: 10px 25px 10px 25px;
     font-size: larger;
 }
-
-
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: blue;
+}
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+h3 {
+    font-size: 15px;
+    font-weight: bold;
+}
 
 
 
 
 .side-bar {
     grid-area: side-bar;
-    background-color: rgba(42, 151, 165, 0.666);
+    background-color: rgba(42, 77, 165, 0.666);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 3fr 3fr;
@@ -85,9 +100,8 @@ button {
     padding-top: 50px;
 
 }
-h1 {
+#dashboard {
     font-size: 50px;
-
 }
 .nav-bar-1 {
     display: grid;
@@ -96,6 +110,12 @@ h1 {
 .nav-bar-2 {
     display: grid;
     font-size: 30px;
+}
+.side-bar-item {
+    image-orientation: flip;
+}
+.side-bar-item {
+    image-orientation: flip;
 }
 
 
@@ -111,7 +131,7 @@ header {
     grid-template-areas:
     "search profile-access"
     "welcome-area action-buttons";
-    background-color: rgba(171, 171, 171, 0.452);
+    background-color: rgb(255, 255, 255);
 }
 .search {
     grid-area: search;
@@ -170,20 +190,68 @@ header {
 
 main {
     grid-area: main;
+    background-color: rgba(214, 214, 214, 0.39);
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
     "projects announcements"
     "projects trending";
-    margin: 15px;
 }
 .project-area {
     grid-area: projects;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px 1fr;
+    grid-template-areas:
+    "p-header"
+    "card-area";
 }
-.announcements {
+.card-area {
+    grid-area: card-area;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "card card"
+    "card card"
+    "card card";
+    gap: 30px;
+    margin: 30px;
+}
+.announcements-area {
     grid-area: announcements;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px repeat(3, 10fr);
+    grid-template-areas:
+    "a-header"
+    "announcement"
+    "announcement"
+    "announcement";
 }
-.trending {
+.trending-area {
     grid-area: trending;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30px repeat(4, 10fr);
+    grid-template-areas:
+    "t-header"
+    "trending"
+    "trending"
+    "trending"
+    "trending";
+}
+#project-header {
+    grid-area: p-header;
+}
+#announcements-header {
+    grid-area: a-header;
+}
+#trending-header {
+    grid-area: t-header;
+}
+.project-cards {
+    display: flex;
+    justify-content: center;
 }
